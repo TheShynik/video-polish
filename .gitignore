@@ -8,6 +8,8 @@
 !/analyze_reference_detail_test.py
 !/reference_detail_results.md
 !/stable_local_native/
+!/video_polish_app/
+/video_polish_app/outputs/
 /stable_local_native/assets/
 *.pyc
 __pycache__/
