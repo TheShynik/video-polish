@@ -11,36 +11,36 @@ class App:
         self.root=root;root.title('Video Polish — Local Native');root.geometry('1000x800');root.minsize(760,650)
         self.source=None;self.output=None;self.busy=False;self.cancel=threading.Event();self.messages=queue.Queue();self.playing=False;self.frame_id=0;self.preview_busy=False;self.generation=0
         top=ttk.Frame(root,padding=12);top.pack(fill='x')
-        self.pick=ttk.Button(top,text='Выбрать видео',command=self.choose);self.pick.pack(side='left')
-        self.export=ttk.Button(top,text='Enhance → сохранить MP4',command=self.run,state='disabled');self.export.pack(side='left',padx=12)
-        self.stop=ttk.Button(top,text='Отмена',command=self.cancel.set,state='disabled');self.stop.pack(side='left')
-        self.info=ttk.Label(root,text='Local Native • офлайн • без Render Polish',padding=8);self.info.pack(fill='x')
+        self.pick=ttk.Button(top,text='Choose Video',command=self.choose);self.pick.pack(side='left')
+        self.export=ttk.Button(top,text='Enhance → Save MP4',command=self.run,state='disabled');self.export.pack(side='left',padx=12)
+        self.stop=ttk.Button(top,text='Cancel',command=self.cancel.set,state='disabled');self.stop.pack(side='left')
+        self.info=ttk.Label(root,text='Local Native • Offline',padding=8);self.info.pack(fill='x')
         self.canvas=tk.Label(root,bg='#181818');self.canvas.pack(fill='both',expand=True,padx=12)
         nav=ttk.Frame(root,padding=10);nav.pack(fill='x')
-        self.play=ttk.Button(nav,text='▶ Превью',command=self.toggle,state='disabled');self.play.pack(side='left')
-        self.view=tk.StringVar(value='Оригинал');self.mode=ttk.Combobox(nav,textvariable=self.view,values=['Оригинал','Результат'],state='readonly',width=15);self.mode.pack(side='left',padx=12);self.mode.bind('<<ComboboxSelected>>',lambda e:self.seek())
+        self.play=ttk.Button(nav,text='▶ Preview',command=self.toggle,state='disabled');self.play.pack(side='left')
+        self.view=tk.StringVar(value='Original');self.mode=ttk.Combobox(nav,textvariable=self.view,values=['Original','Result'],state='readonly',width=15);self.mode.pack(side='left',padx=12);self.mode.bind('<<ComboboxSelected>>',lambda e:self.seek())
         self.position=tk.DoubleVar();self.slider=ttk.Scale(nav,from_=0,to=1,variable=self.position);self.slider.pack(side='left',fill='x',expand=True);self.slider.bind('<ButtonRelease-1>',lambda e:self.seek())
         self.progress=ttk.Progressbar(root,maximum=100);self.progress.pack(fill='x',padx=12,pady=8)
-        self.status=ttk.Label(root,text='Выберите исходный MP4. Экспорт: 1920×1920 с полями, FPS и аудио исходника.',padding=10);self.status.pack(fill='x')
+        self.status=ttk.Label(root,text='Choose a source MP4. Export: 1920×1920 with padding, original FPS and audio.',padding=10);self.status.pack(fill='x')
         root.protocol('WM_DELETE_WINDOW',self.close);root.after(100,self.poll)
 
     def choose(self):
-        path=filedialog.askopenfilename(filetypes=[('Видео','*.mp4 *.mov *.mkv *.avi'),('Все файлы','*.*')])
+        path=filedialog.askopenfilename(title='Choose Video',filetypes=[('Video','*.mp4 *.mov *.mkv *.avi'),('All Files','*.*')])
         if not path:return
         try:
             data,v=probe(path)
-            self.source=path;self.output=None;self.view.set('Оригинал');self.fps=__import__('fractions').Fraction(v['r_frame_rate']);self.duration=float(v.get('duration',data['format'].get('duration',0)))
+            self.source=path;self.output=None;self.view.set('Original');self.fps=__import__('fractions').Fraction(v['r_frame_rate']);self.duration=float(v.get('duration',data['format'].get('duration',0)))
             self.playing=False;self.generation+=1;self.slider.configure(to=max(0,self.duration-1/float(self.fps)));self.position.set(0)
-            self.info.configure(text=f'{Path(path).name} • {v["width"]}×{v["height"]} • {float(self.fps):g} FPS • {self.duration:.2f} сек • Local Native')
+            self.info.configure(text=f'{Path(path).name} • {v["width"]}×{v["height"]} • {float(self.fps):g} FPS • {self.duration:.2f} s • Local Native')
             self.export.configure(state='normal');self.play.configure(state='normal');self.seek()
-        except Exception as e:messagebox.showerror('Видео не поддерживается',str(e))
+        except Exception as e:messagebox.showerror('Unsupported Video',str(e))
 
     def seek(self):
-        self.playing=False;self.play.configure(text='▶ Превью');self.generation+=1;self.preview()
+        self.playing=False;self.play.configure(text='▶ Preview');self.generation+=1;self.preview()
 
     def toggle(self):
         if not self.source:return
-        self.playing=not self.playing;self.play.configure(text='❚❚ Пауза' if self.playing else '▶ Превью')
+        self.playing=not self.playing;self.play.configure(text='❚❚ Pause' if self.playing else '▶ Preview')
         if self.playing:self.tick()
 
     def tick(self):
@@ -50,9 +50,9 @@ class App:
         self.root.after(200,self.tick)
 
     def preview(self):
-        path=self.output if self.view.get()=='Результат' else self.source
+        path=self.output if self.view.get()=='Result' else self.source
         if not path:
-            self.status.configure(text='Сначала обработайте видео, чтобы посмотреть результат.');return
+            self.status.configure(text='Enhance the video first to preview the result.');return
         if self.preview_busy:return
         self.preview_busy=True;generation=self.generation;t=self.position.get()
         def worker():
@@ -64,11 +64,11 @@ class App:
 
     def run(self):
         if not self.source or self.busy:return
-        dest=filedialog.asksaveasfilename(defaultextension='.mp4',initialfile=Path(self.source).stem+'_local_native.mp4',filetypes=[('MP4','*.mp4')])
+        dest=filedialog.asksaveasfilename(title='Save Enhanced MP4',defaultextension='.mp4',initialfile=Path(self.source).stem+'_local_native.mp4',filetypes=[('MP4','*.mp4')])
         if not dest:return
-        if Path(dest).exists():messagebox.showerror('Новый файл','Выберите новое имя: существующие файлы не перезаписываются.');return
+        if Path(dest).exists():messagebox.showerror('New Output File','Choose a new filename. Existing files are never overwritten.');return
         self.busy=True;self.playing=False;self.cancel.clear();self.pick.configure(state='disabled');self.export.configure(state='disabled');self.stop.configure(state='normal');self.progress['value']=0
-        self.status.configure(text='Обработка Local Native на CPU. Это может занять несколько минут…')
+        self.status.configure(text='Processing with Local Native. This may take several minutes…')
         def worker():
             try:
                 r=enhance(self.source,dest,lambda n,total,secs:self.messages.put(('progress',n,total,secs)),self.cancel)
@@ -84,21 +84,21 @@ class App:
                     self.preview_busy=False
                     if item[1]==self.generation:
                         if kind=='preview':self.photo=ImageTk.PhotoImage(item[2]);self.canvas.configure(image=self.photo)
-                        else:self.status.configure(text='Ошибка превью: '+item[2])
+                        else:self.status.configure(text='Preview error: '+item[2])
                     else:self.preview()
                 elif kind=='progress':
-                    _,n,total,secs=item;self.progress['value']=100*n/total if total else 0;self.status.configure(text=f'Кадров: {n} / {total or "?"} • {secs:.0f} сек • источник не изменяется')
+                    _,n,total,secs=item;self.progress['value']=100*n/total if total else 0;self.status.configure(text=f'Frames: {n} / {total or "?"} • {secs:.0f} s • source unchanged')
                 elif kind in ('done','error'):
                     self.busy=False;self.pick.configure(state='normal');self.export.configure(state='normal');self.stop.configure(state='disabled')
                     if kind=='done':
-                        self.output=item[1];self.progress['value']=100;self.status.configure(text='Готово: '+self.output);self.view.set('Результат');self.position.set(0);self.seek();messagebox.showinfo('Готово','MP4 сохранён:\n'+self.output)
-                    else:self.status.configure(text=item[1]);messagebox.showerror('Обработка остановлена',item[1])
+                        self.output=item[1];self.progress['value']=100;self.status.configure(text='Done: '+self.output);self.view.set('Result');self.position.set(0);self.seek();messagebox.showinfo('Done','MP4 saved:\n'+self.output)
+                    else:self.status.configure(text=item[1]);messagebox.showerror('Processing Stopped',item[1])
         except queue.Empty:pass
         self.root.after(100,self.poll)
 
     def close(self):
         if self.busy:
-            self.cancel.set();messagebox.showinfo('Отмена','Дождитесь остановки обработки, затем закройте окно.');return
+            self.cancel.set();messagebox.showinfo('Cancel','Wait for processing to stop, then close the window.');return
         self.root.destroy()
 
 if __name__=='__main__':
