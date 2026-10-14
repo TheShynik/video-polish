@@ -1,0 +1,2 @@
+# Stable source/settings hashes must survive Windows checkouts.
+* text eol=lf

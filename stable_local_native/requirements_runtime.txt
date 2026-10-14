@@ -1,0 +1,5 @@
+# No AI model or CUDA runtime needed by the approved RGB-only pipeline.
+numpy==1.26.4
+opencv-python==4.11.0.86
+Pillow==10.3.0
+psutil==6.1.1

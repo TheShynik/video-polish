@@ -1,0 +1,39 @@
+{
+  "spatial_means": {
+    "original": {
+      "mean_gradient": 0.02095574977186819,
+      "highpass_rms": 0.02776060925486187,
+      "local_contrast_rms": 0.061424584469447534
+    },
+    "tensorpix": {
+      "mean_gradient": 0.029564337339252234,
+      "highpass_rms": 0.0523986021677653,
+      "local_contrast_rms": 0.08595693831642469
+    },
+    "baseline": {
+      "mean_gradient": 0.025303654822831353,
+      "highpass_rms": 0.036571362242102626,
+      "local_contrast_rms": 0.07130947870512803
+    },
+    "local": {
+      "mean_gradient": 0.024668361370762188,
+      "highpass_rms": 0.036405568725119034,
+      "local_contrast_rms": 0.06994625863929589
+    }
+  },
+  "temporal_luma_rms_means": {
+    "original": 0.017054736864666978,
+    "tensorpix": 0.03161364701427832,
+    "baseline": 0.021885996715736992,
+    "local": 0.021722512757953477
+  },
+  "flow_valid_fraction": 0.8084304242530347,
+  "local_mean_rgb_delta_levels": [
+    -1.1589130371809007,
+    -1.1464957455794016,
+    -1.1329801405469577
+  ],
+  "local_mean_abs_rgb_delta_levels": 1.7949570319033228,
+  "local_max_opponent_chroma_delta_levels": 37.9999977350235,
+  "caution": "Metrics measure change not perceptual quality. Sharpness increases subpixel warp residual. RGB ratios/perceived saturation not guaranteed identical; opponent chroma can change during quantization/resizing."
+}

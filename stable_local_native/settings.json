@@ -1,0 +1,55 @@
+{
+  "train_frames": [
+    0,
+    20,
+    40,
+    60,
+    80,
+    100
+  ],
+  "heldout_frames": [
+    10,
+    30,
+    50,
+    70,
+    90,
+    110
+  ],
+  "source_frames": [
+    740,
+    859
+  ],
+  "sigmas_sd_px": [
+    0.7,
+    1.6,
+    4.0
+  ],
+  "sigmas_native_px": [
+    2.0999999999999996,
+    4.800000000000001,
+    12.0
+  ],
+  "gains": [
+    1.4128677007851675,
+    0.044110865057794484,
+    -0.03137465144174198
+  ],
+  "ridge": 0.001,
+  "baseline_sigma_native_px": 3.0,
+  "baseline_gain": 0.955070392634232,
+  "delta_limit": 0.12,
+  "color": "Equal-channel encoded-RGB offset, gamut limited; no tone/exposure/saturation change",
+  "temporal": "25% warped previous correction only where bidirectional flow and brightness consistent; source RGB never warped/blended",
+  "input_resolution": [
+    1080,
+    1920
+  ],
+  "comparison_resolution": [
+    360,
+    640
+  ],
+  "frames": 120,
+  "fps": "60/1",
+  "models": "none",
+  "implementation": "CPU, existing OpenCV/NumPy/Pillow; no installation"
+}

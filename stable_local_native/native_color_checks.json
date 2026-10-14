@@ -1,0 +1,26 @@
+[
+  {
+    "index": 10,
+    "native_opponent_chroma_max_delta_levels": 1
+  },
+  {
+    "index": 30,
+    "native_opponent_chroma_max_delta_levels": 1
+  },
+  {
+    "index": 50,
+    "native_opponent_chroma_max_delta_levels": 1
+  },
+  {
+    "index": 70,
+    "native_opponent_chroma_max_delta_levels": 1
+  },
+  {
+    "index": 90,
+    "native_opponent_chroma_max_delta_levels": 1
+  },
+  {
+    "index": 110,
+    "native_opponent_chroma_max_delta_levels": 1
+  }
+]

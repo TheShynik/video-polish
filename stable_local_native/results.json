@@ -1,0 +1,1267 @@
+{
+  "settings": {
+    "train_frames": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "heldout_frames": [
+      10,
+      30,
+      50,
+      70,
+      90,
+      110
+    ],
+    "source_frames": [
+      740,
+      859
+    ],
+    "sigmas_sd_px": [
+      0.7,
+      1.6,
+      4.0
+    ],
+    "sigmas_native_px": [
+      2.0999999999999996,
+      4.800000000000001,
+      12.0
+    ],
+    "gains": [
+      1.4128677007851675,
+      0.044110865057794484,
+      -0.03137465144174198
+    ],
+    "ridge": 0.001,
+    "baseline_sigma_native_px": 3.0,
+    "baseline_gain": 0.955070392634232,
+    "delta_limit": 0.12,
+    "color": "Equal-channel encoded-RGB offset, gamut limited; no tone/exposure/saturation change",
+    "temporal": "25% warped previous correction only where bidirectional flow and brightness consistent; source RGB never warped/blended",
+    "input_resolution": [
+      1080,
+      1920
+    ],
+    "comparison_resolution": [
+      360,
+      640
+    ],
+    "frames": 120,
+    "fps": "60/1",
+    "models": "none",
+    "implementation": "CPU, existing OpenCV/NumPy/Pillow; no installation"
+  },
+  "processing_wall_seconds_including_png_io": 142.69313429999602,
+  "peak_python_rss_mib": 266.95703125,
+  "gpu_vram": "not applicable: CPU processing; no GPU kernels",
+  "frame_metrics": [
+    {
+      "index": 0,
+      "source_frame": 740,
+      "heldout": false,
+      "flow_valid_fraction": 0.0,
+      "original_target_luma_mse": 0.0008196998969651759,
+      "local_target_luma_mse": 0.0005141442525200546,
+      "baseline_target_luma_mse": 0.0004740061121992767,
+      "local_mean_abs_rgb_delta_levels": 2.0537166483700275
+    },
+    {
+      "index": 1,
+      "source_frame": 741,
+      "heldout": false,
+      "flow_valid_fraction": 0.6029576581790124,
+      "original_target_luma_mse": 0.0007108840509317815,
+      "local_target_luma_mse": 0.0004983009421266615,
+      "baseline_target_luma_mse": 0.000455188361229375,
+      "local_mean_abs_rgb_delta_levels": 1.9047433859668672
+    },
+    {
+      "index": 2,
+      "source_frame": 742,
+      "heldout": false,
+      "flow_valid_fraction": 0.6069704861111112,
+      "original_target_luma_mse": 0.0007365538622252643,
+      "local_target_luma_mse": 0.0005084041622467339,
+      "baseline_target_luma_mse": 0.0004674907249864191,
+      "local_mean_abs_rgb_delta_levels": 1.9392595463432372
+    },
+    {
+      "index": 3,
+      "source_frame": 743,
+      "heldout": false,
+      "flow_valid_fraction": 0.6120365547839506,
+      "original_target_luma_mse": 0.0006914990372024477,
+      "local_target_luma_mse": 0.0004913844750262797,
+      "baseline_target_luma_mse": 0.0004484450037125498,
+      "local_mean_abs_rgb_delta_levels": 1.8891722965054214
+    },
+    {
+      "index": 4,
+      "source_frame": 744,
+      "heldout": false,
+      "flow_valid_fraction": 0.6181346450617284,
+      "original_target_luma_mse": 0.0007369589293375611,
+      "local_target_luma_mse": 0.00047527917195111513,
+      "baseline_target_luma_mse": 0.00043761671986430883,
+      "local_mean_abs_rgb_delta_levels": 1.9085239456035197
+    },
+    {
+      "index": 5,
+      "source_frame": 745,
+      "heldout": false,
+      "flow_valid_fraction": 0.6260503472222222,
+      "original_target_luma_mse": 0.0006508790538646281,
+      "local_target_luma_mse": 0.0004641051637008786,
+      "baseline_target_luma_mse": 0.00042224369826726615,
+      "local_mean_abs_rgb_delta_levels": 1.8519948539324105
+    },
+    {
+      "index": 6,
+      "source_frame": 746,
+      "heldout": false,
+      "flow_valid_fraction": 0.6282026427469136,
+      "original_target_luma_mse": 0.0006865720497444272,
+      "local_target_luma_mse": 0.0004766628553625196,
+      "baseline_target_luma_mse": 0.0004359338490758091,
+      "local_mean_abs_rgb_delta_levels": 1.8988584517501295
+    },
+    {
+      "index": 7,
+      "source_frame": 747,
+      "heldout": false,
+      "flow_valid_fraction": 0.6217476851851852,
+      "original_target_luma_mse": 0.0006434702663682401,
+      "local_target_luma_mse": 0.0004566920397337526,
+      "baseline_target_luma_mse": 0.00041461933869868517,
+      "local_mean_abs_rgb_delta_levels": 1.86249737162143
+    },
+    {
+      "index": 8,
+      "source_frame": 748,
+      "heldout": false,
+      "flow_valid_fraction": 0.6198702739197531,
+      "original_target_luma_mse": 0.0007153588812798262,
+      "local_target_luma_mse": 0.00045806384878233075,
+      "baseline_target_luma_mse": 0.0004198907408863306,
+      "local_mean_abs_rgb_delta_levels": 1.9030372775159776
+    },
+    {
+      "index": 9,
+      "source_frame": 749,
+      "heldout": false,
+      "flow_valid_fraction": 0.6163512731481482,
+      "original_target_luma_mse": 0.0006779350223951042,
+      "local_target_luma_mse": 0.0004606819129548967,
+      "baseline_target_luma_mse": 0.00041979545494541526,
+      "local_mean_abs_rgb_delta_levels": 1.8425512919202447
+    },
+    {
+      "index": 10,
+      "source_frame": 750,
+      "heldout": true,
+      "flow_valid_fraction": 0.616198398919753,
+      "original_target_luma_mse": 0.0006900583393871784,
+      "local_target_luma_mse": 0.0005021996912546456,
+      "baseline_target_luma_mse": 0.00046020030276849866,
+      "local_mean_abs_rgb_delta_levels": 1.883519149851054
+    },
+    {
+      "index": 11,
+      "source_frame": 751,
+      "heldout": false,
+      "flow_valid_fraction": 0.6121764081790123,
+      "original_target_luma_mse": 0.0006904954207129776,
+      "local_target_luma_mse": 0.00043407786870375276,
+      "baseline_target_luma_mse": 0.0003954987332690507,
+      "local_mean_abs_rgb_delta_levels": 1.8522497965022922
+    },
+    {
+      "index": 12,
+      "source_frame": 752,
+      "heldout": false,
+      "flow_valid_fraction": 0.6135001929012346,
+      "original_target_luma_mse": 0.0007085868273861706,
+      "local_target_luma_mse": 0.0004980047233402729,
+      "baseline_target_luma_mse": 0.00045584075269289315,
+      "local_mean_abs_rgb_delta_levels": 1.8900774791836739
+    },
+    {
+      "index": 13,
+      "source_frame": 753,
+      "heldout": false,
+      "flow_valid_fraction": 0.6149792631172839,
+      "original_target_luma_mse": 0.0007438030443154275,
+      "local_target_luma_mse": 0.0005041953409090638,
+      "baseline_target_luma_mse": 0.0004614020581357181,
+      "local_mean_abs_rgb_delta_levels": 1.839890128467232
+    },
+    {
+      "index": 14,
+      "source_frame": 754,
+      "heldout": false,
+      "flow_valid_fraction": 0.6217616705246913,
+      "original_target_luma_mse": 0.0007465476519428194,
+      "local_target_luma_mse": 0.0005215731798671186,
+      "baseline_target_luma_mse": 0.0004800202732440084,
+      "local_mean_abs_rgb_delta_levels": 1.887056166306138
+    },
+    {
+      "index": 15,
+      "source_frame": 755,
+      "heldout": false,
+      "flow_valid_fraction": 0.6200921103395062,
+      "original_target_luma_mse": 0.0008644904009997845,
+      "local_target_luma_mse": 0.0005557155818678439,
+      "baseline_target_luma_mse": 0.0005152223748154938,
+      "local_mean_abs_rgb_delta_levels": 1.857614277396351
+    },
+    {
+      "index": 16,
+      "source_frame": 756,
+      "heldout": false,
+      "flow_valid_fraction": 0.6194044174382716,
+      "original_target_luma_mse": 0.0007994367042556405,
+      "local_target_luma_mse": 0.0005307950777933002,
+      "baseline_target_luma_mse": 0.00048804027028381824,
+      "local_mean_abs_rgb_delta_levels": 1.9091865350492299
+    },
+    {
+      "index": 17,
+      "source_frame": 757,
+      "heldout": false,
+      "flow_valid_fraction": 0.6175790895061728,
+      "original_target_luma_mse": 0.0008355600875802338,
+      "local_target_luma_mse": 0.000555804988835007,
+      "baseline_target_luma_mse": 0.0005116726388223469,
+      "local_mean_abs_rgb_delta_levels": 1.8821191624738276
+    },
+    {
+      "index": 18,
+      "source_frame": 758,
+      "heldout": false,
+      "flow_valid_fraction": 0.6152932098765432,
+      "original_target_luma_mse": 0.0008528083562850952,
+      "local_target_luma_mse": 0.0005736971506848931,
+      "baseline_target_luma_mse": 0.0005299544427543879,
+      "local_mean_abs_rgb_delta_levels": 1.9364973320625722
+    },
+    {
+      "index": 19,
+      "source_frame": 759,
+      "heldout": false,
+      "flow_valid_fraction": 0.6099295910493827,
+      "original_target_luma_mse": 0.0009565612999722362,
+      "local_target_luma_mse": 0.0006131164263933897,
+      "baseline_target_luma_mse": 0.000570056785363704,
+      "local_mean_abs_rgb_delta_levels": 1.9050460634753108
+    },
+    {
+      "index": 20,
+      "source_frame": 760,
+      "heldout": false,
+      "flow_valid_fraction": 0.6049956597222222,
+      "original_target_luma_mse": 0.000884620938450098,
+      "local_target_luma_mse": 0.0005654332926496863,
+      "baseline_target_luma_mse": 0.0005215710843913257,
+      "local_mean_abs_rgb_delta_levels": 1.9599320995621383
+    },
+    {
+      "index": 21,
+      "source_frame": 761,
+      "heldout": false,
+      "flow_valid_fraction": 0.5975916280864197,
+      "original_target_luma_mse": 0.000796773296315223,
+      "local_target_luma_mse": 0.0005298249307088554,
+      "baseline_target_luma_mse": 0.0004832186095882207,
+      "local_mean_abs_rgb_delta_levels": 1.9466167828068137
+    },
+    {
+      "index": 22,
+      "source_frame": 762,
+      "heldout": false,
+      "flow_valid_fraction": 0.5896291473765433,
+      "original_target_luma_mse": 0.0009236468467861414,
+      "local_target_luma_mse": 0.0005711756530217826,
+      "baseline_target_luma_mse": 0.0005271498812362552,
+      "local_mean_abs_rgb_delta_levels": 1.9918243819847703
+    },
+    {
+      "index": 23,
+      "source_frame": 763,
+      "heldout": false,
+      "flow_valid_fraction": 0.5934717399691358,
+      "original_target_luma_mse": 0.0008206131751649082,
+      "local_target_luma_mse": 0.0005392334423959255,
+      "baseline_target_luma_mse": 0.0004927226109430194,
+      "local_mean_abs_rgb_delta_levels": 1.9567811186425388
+    },
+    {
+      "index": 24,
+      "source_frame": 764,
+      "heldout": false,
+      "flow_valid_fraction": 0.5993687307098765,
+      "original_target_luma_mse": 0.0009146742522716522,
+      "local_target_luma_mse": 0.0006054643308743834,
+      "baseline_target_luma_mse": 0.0005583224701695144,
+      "local_mean_abs_rgb_delta_levels": 2.020673146471381
+    },
+    {
+      "index": 25,
+      "source_frame": 765,
+      "heldout": false,
+      "flow_valid_fraction": 0.6006143904320987,
+      "original_target_luma_mse": 0.0008533323998562992,
+      "local_target_luma_mse": 0.0005676150904037058,
+      "baseline_target_luma_mse": 0.0005197348073124886,
+      "local_mean_abs_rgb_delta_levels": 2.0324347028508782
+    },
+    {
+      "index": 26,
+      "source_frame": 766,
+      "heldout": false,
+      "flow_valid_fraction": 0.6036231674382716,
+      "original_target_luma_mse": 0.0009297790238633752,
+      "local_target_luma_mse": 0.0005782130174338818,
+      "baseline_target_luma_mse": 0.0005341421347111464,
+      "local_mean_abs_rgb_delta_levels": 2.0944243390113115
+    },
+    {
+      "index": 27,
+      "source_frame": 767,
+      "heldout": false,
+      "flow_valid_fraction": 0.6105478395061729,
+      "original_target_luma_mse": 0.0008362041553482413,
+      "local_target_luma_mse": 0.000549932534340769,
+      "baseline_target_luma_mse": 0.0005023374687880278,
+      "local_mean_abs_rgb_delta_levels": 2.0792489033192396
+    },
+    {
+      "index": 28,
+      "source_frame": 768,
+      "heldout": false,
+      "flow_valid_fraction": 0.6232918595679012,
+      "original_target_luma_mse": 0.0009716216009110212,
+      "local_target_luma_mse": 0.0006153141148388386,
+      "baseline_target_luma_mse": 0.0005695997970178723,
+      "local_mean_abs_rgb_delta_levels": 2.1350505715236068
+    },
+    {
+      "index": 29,
+      "source_frame": 769,
+      "heldout": false,
+      "flow_valid_fraction": 0.6259857253086419,
+      "original_target_luma_mse": 0.0008876860956661403,
+      "local_target_luma_mse": 0.0005637198919430375,
+      "baseline_target_luma_mse": 0.000516067782882601,
+      "local_mean_abs_rgb_delta_levels": 2.0935185626149178
+    },
+    {
+      "index": 30,
+      "source_frame": 770,
+      "heldout": true,
+      "flow_valid_fraction": 0.6300945216049383,
+      "original_target_luma_mse": 0.0008926349109970033,
+      "local_target_luma_mse": 0.0006019420688971877,
+      "baseline_target_luma_mse": 0.000552585581317544,
+      "local_mean_abs_rgb_delta_levels": 2.1365358168259263
+    },
+    {
+      "index": 31,
+      "source_frame": 771,
+      "heldout": false,
+      "flow_valid_fraction": 0.6308135609567901,
+      "original_target_luma_mse": 0.0009482743917033076,
+      "local_target_luma_mse": 0.0005804589600302279,
+      "baseline_target_luma_mse": 0.000536279461812228,
+      "local_mean_abs_rgb_delta_levels": 2.100629168562591
+    },
+    {
+      "index": 32,
+      "source_frame": 772,
+      "heldout": false,
+      "flow_valid_fraction": 0.6314486882716049,
+      "original_target_luma_mse": 0.0009060791344381869,
+      "local_target_luma_mse": 0.000606470974162221,
+      "baseline_target_luma_mse": 0.0005563344457186759,
+      "local_mean_abs_rgb_delta_levels": 2.1581982169300318
+    },
+    {
+      "index": 33,
+      "source_frame": 773,
+      "heldout": false,
+      "flow_valid_fraction": 0.6335411844135802,
+      "original_target_luma_mse": 0.0010084013920277357,
+      "local_target_luma_mse": 0.0006617076578550041,
+      "baseline_target_luma_mse": 0.0006138204480521381,
+      "local_mean_abs_rgb_delta_levels": 2.117240452207625
+    },
+    {
+      "index": 34,
+      "source_frame": 774,
+      "heldout": false,
+      "flow_valid_fraction": 0.6358748070987654,
+      "original_target_luma_mse": 0.0009880207944661379,
+      "local_target_luma_mse": 0.0006663522217422724,
+      "baseline_target_luma_mse": 0.0006165390368551016,
+      "local_mean_abs_rgb_delta_levels": 2.1629876224324107
+    },
+    {
+      "index": 35,
+      "source_frame": 775,
+      "heldout": false,
+      "flow_valid_fraction": 0.6350212191358025,
+      "original_target_luma_mse": 0.0010195565409958363,
+      "local_target_luma_mse": 0.0006541443290188909,
+      "baseline_target_luma_mse": 0.000605634821113199,
+      "local_mean_abs_rgb_delta_levels": 2.145777870900929
+    },
+    {
+      "index": 36,
+      "source_frame": 776,
+      "heldout": false,
+      "flow_valid_fraction": 0.6367226080246914,
+      "original_target_luma_mse": 0.0010636931983754039,
+      "local_target_luma_mse": 0.0006589646218344569,
+      "baseline_target_luma_mse": 0.000613090698607266,
+      "local_mean_abs_rgb_delta_levels": 2.1858711820095778
+    },
+    {
+      "index": 37,
+      "source_frame": 777,
+      "heldout": false,
+      "flow_valid_fraction": 0.6403867669753086,
+      "original_target_luma_mse": 0.0010275563690811396,
+      "local_target_luma_mse": 0.0006450754008255899,
+      "baseline_target_luma_mse": 0.0005982527509331703,
+      "local_mean_abs_rgb_delta_levels": 2.130304151214659
+    },
+    {
+      "index": 38,
+      "source_frame": 778,
+      "heldout": false,
+      "flow_valid_fraction": 0.6441155478395062,
+      "original_target_luma_mse": 0.001060813432559371,
+      "local_target_luma_mse": 0.0006857119151391089,
+      "baseline_target_luma_mse": 0.0006369961774908006,
+      "local_mean_abs_rgb_delta_levels": 2.172904615290463
+    },
+    {
+      "index": 39,
+      "source_frame": 779,
+      "heldout": false,
+      "flow_valid_fraction": 0.6435826581790124,
+      "original_target_luma_mse": 0.0010699380654841661,
+      "local_target_luma_mse": 0.0007210228941403329,
+      "baseline_target_luma_mse": 0.0006695415358990431,
+      "local_mean_abs_rgb_delta_levels": 2.1894503524526954
+    },
+    {
+      "index": 40,
+      "source_frame": 780,
+      "heldout": false,
+      "flow_valid_fraction": 0.6424064429012346,
+      "original_target_luma_mse": 0.0013600304955616593,
+      "local_target_luma_mse": 0.0008891725447028875,
+      "baseline_target_luma_mse": 0.0008449540473520756,
+      "local_mean_abs_rgb_delta_levels": 2.2099089296534657
+    },
+    {
+      "index": 41,
+      "source_frame": 781,
+      "heldout": false,
+      "flow_valid_fraction": 0.6512162422839506,
+      "original_target_luma_mse": 0.0011535492958500981,
+      "local_target_luma_mse": 0.0007534592878073454,
+      "baseline_target_luma_mse": 0.0007048356928862631,
+      "local_mean_abs_rgb_delta_levels": 2.140312339179218
+    },
+    {
+      "index": 42,
+      "source_frame": 782,
+      "heldout": false,
+      "flow_valid_fraction": 0.6520867091049383,
+      "original_target_luma_mse": 0.0012265195837244391,
+      "local_target_luma_mse": 0.0007693767547607422,
+      "baseline_target_luma_mse": 0.0007234874065034091,
+      "local_mean_abs_rgb_delta_levels": 2.193863815627992
+    },
+    {
+      "index": 43,
+      "source_frame": 783,
+      "heldout": false,
+      "flow_valid_fraction": 0.6542886766975309,
+      "original_target_luma_mse": 0.0011174437822774053,
+      "local_target_luma_mse": 0.000689517764840275,
+      "baseline_target_luma_mse": 0.0006426702602766454,
+      "local_mean_abs_rgb_delta_levels": 2.1358043560758233
+    },
+    {
+      "index": 44,
+      "source_frame": 784,
+      "heldout": false,
+      "flow_valid_fraction": 0.655892650462963,
+      "original_target_luma_mse": 0.0013422801857814193,
+      "local_target_luma_mse": 0.0008469119784422219,
+      "baseline_target_luma_mse": 0.0008013583137653768,
+      "local_mean_abs_rgb_delta_levels": 2.190049532800913
+    },
+    {
+      "index": 45,
+      "source_frame": 785,
+      "heldout": false,
+      "flow_valid_fraction": 0.6579132908950617,
+      "original_target_luma_mse": 0.001249449560418725,
+      "local_target_luma_mse": 0.000804985873401165,
+      "baseline_target_luma_mse": 0.0007562482496723533,
+      "local_mean_abs_rgb_delta_levels": 2.1365020936354995
+    },
+    {
+      "index": 46,
+      "source_frame": 786,
+      "heldout": false,
+      "flow_valid_fraction": 0.6602599344135802,
+      "original_target_luma_mse": 0.0014198621502146125,
+      "local_target_luma_mse": 0.0009182320209220052,
+      "baseline_target_luma_mse": 0.0008723610662855208,
+      "local_mean_abs_rgb_delta_levels": 2.170381313189864
+    },
+    {
+      "index": 47,
+      "source_frame": 787,
+      "heldout": false,
+      "flow_valid_fraction": 0.6625651041666667,
+      "original_target_luma_mse": 0.001209688140079379,
+      "local_target_luma_mse": 0.0007661851705051959,
+      "baseline_target_luma_mse": 0.0007190043106675148,
+      "local_mean_abs_rgb_delta_levels": 2.114635454490781
+    },
+    {
+      "index": 48,
+      "source_frame": 788,
+      "heldout": false,
+      "flow_valid_fraction": 0.6654629629629629,
+      "original_target_luma_mse": 0.0012663399102166295,
+      "local_target_luma_mse": 0.0007626619189977646,
+      "baseline_target_luma_mse": 0.0007190245669335127,
+      "local_mean_abs_rgb_delta_levels": 2.162443301640451
+    },
+    {
+      "index": 49,
+      "source_frame": 789,
+      "heldout": false,
+      "flow_valid_fraction": 0.6665605709876543,
+      "original_target_luma_mse": 0.0011349391425028443,
+      "local_target_luma_mse": 0.0006942667532712221,
+      "baseline_target_luma_mse": 0.0006471478845924139,
+      "local_mean_abs_rgb_delta_levels": 2.132063931785524
+    },
+    {
+      "index": 50,
+      "source_frame": 790,
+      "heldout": true,
+      "flow_valid_fraction": 0.6663946759259259,
+      "original_target_luma_mse": 0.001333075575530529,
+      "local_target_luma_mse": 0.0008633477264083922,
+      "baseline_target_luma_mse": 0.0008154311217367649,
+      "local_mean_abs_rgb_delta_levels": 2.166342604905367
+    },
+    {
+      "index": 51,
+      "source_frame": 791,
+      "heldout": false,
+      "flow_valid_fraction": 0.666304012345679,
+      "original_target_luma_mse": 0.001223647384904325,
+      "local_target_luma_mse": 0.000775110675022006,
+      "baseline_target_luma_mse": 0.0007263899315148592,
+      "local_mean_abs_rgb_delta_levels": 2.106723329052329
+    },
+    {
+      "index": 52,
+      "source_frame": 792,
+      "heldout": false,
+      "flow_valid_fraction": 0.6674474344135802,
+      "original_target_luma_mse": 0.0013040481135249138,
+      "local_target_luma_mse": 0.0007895303424447775,
+      "baseline_target_luma_mse": 0.0007466491661034524,
+      "local_mean_abs_rgb_delta_levels": 2.1417201636359096
+    },
+    {
+      "index": 53,
+      "source_frame": 793,
+      "heldout": false,
+      "flow_valid_fraction": 0.6693123070987654,
+      "original_target_luma_mse": 0.0012360834516584873,
+      "local_target_luma_mse": 0.0007851192494854331,
+      "baseline_target_luma_mse": 0.000737877911888063,
+      "local_mean_abs_rgb_delta_levels": 2.098106103949249
+    },
+    {
+      "index": 54,
+      "source_frame": 794,
+      "heldout": false,
+      "flow_valid_fraction": 0.6731182484567901,
+      "original_target_luma_mse": 0.0013546672416850924,
+      "local_target_luma_mse": 0.0008585768518969417,
+      "baseline_target_luma_mse": 0.0008133672527037561,
+      "local_mean_abs_rgb_delta_levels": 2.128805131651461
+    },
+    {
+      "index": 55,
+      "source_frame": 795,
+      "heldout": false,
+      "flow_valid_fraction": 0.6787104552469135,
+      "original_target_luma_mse": 0.0012514638947322965,
+      "local_target_luma_mse": 0.0007864825311116874,
+      "baseline_target_luma_mse": 0.0007399033638648689,
+      "local_mean_abs_rgb_delta_levels": 2.0527536375448108
+    },
+    {
+      "index": 56,
+      "source_frame": 796,
+      "heldout": false,
+      "flow_valid_fraction": 0.6847743055555555,
+      "original_target_luma_mse": 0.0013511773431673646,
+      "local_target_luma_mse": 0.0008187781204469502,
+      "baseline_target_luma_mse": 0.0007781872991472483,
+      "local_mean_abs_rgb_delta_levels": 2.0752705167979
+    },
+    {
+      "index": 57,
+      "source_frame": 797,
+      "heldout": false,
+      "flow_valid_fraction": 0.691826774691358,
+      "original_target_luma_mse": 0.0012864710297435522,
+      "local_target_luma_mse": 0.000806993106380105,
+      "baseline_target_luma_mse": 0.0007624076097272336,
+      "local_mean_abs_rgb_delta_levels": 1.991358669474721
+    },
+    {
+      "index": 58,
+      "source_frame": 798,
+      "heldout": false,
+      "flow_valid_fraction": 0.7002266589506173,
+      "original_target_luma_mse": 0.0014976930106058717,
+      "local_target_luma_mse": 0.0009522656328044832,
+      "baseline_target_luma_mse": 0.0009111458784900606,
+      "local_mean_abs_rgb_delta_levels": 1.9960765913128853
+    },
+    {
+      "index": 59,
+      "source_frame": 799,
+      "heldout": false,
+      "flow_valid_fraction": 0.7092515432098765,
+      "original_target_luma_mse": 0.001334837288595736,
+      "local_target_luma_mse": 0.0008358993218280375,
+      "baseline_target_luma_mse": 0.0007952888263389468,
+      "local_mean_abs_rgb_delta_levels": 1.9042450189590454
+    },
+    {
+      "index": 60,
+      "source_frame": 800,
+      "heldout": false,
+      "flow_valid_fraction": 0.721808449074074,
+      "original_target_luma_mse": 0.0015069142682477832,
+      "local_target_luma_mse": 0.0009415664826519787,
+      "baseline_target_luma_mse": 0.0009066365892067552,
+      "local_mean_abs_rgb_delta_levels": 1.875933688133955
+    },
+    {
+      "index": 61,
+      "source_frame": 801,
+      "heldout": false,
+      "flow_valid_fraction": 0.7357783564814815,
+      "original_target_luma_mse": 0.00148237484972924,
+      "local_target_luma_mse": 0.0009478041902184486,
+      "baseline_target_luma_mse": 0.0009090214152820408,
+      "local_mean_abs_rgb_delta_levels": 1.7834044969640672
+    },
+    {
+      "index": 62,
+      "source_frame": 802,
+      "heldout": false,
+      "flow_valid_fraction": 0.751502700617284,
+      "original_target_luma_mse": 0.0016637969529256225,
+      "local_target_luma_mse": 0.0010740399593487382,
+      "baseline_target_luma_mse": 0.0010396261932328343,
+      "local_mean_abs_rgb_delta_levels": 1.7263757321052253
+    },
+    {
+      "index": 63,
+      "source_frame": 803,
+      "heldout": false,
+      "flow_valid_fraction": 0.7682055362654321,
+      "original_target_luma_mse": 0.0015493897954002023,
+      "local_target_luma_mse": 0.0009850597707554698,
+      "baseline_target_luma_mse": 0.0009494581609033048,
+      "local_mean_abs_rgb_delta_levels": 1.6279771621339023
+    },
+    {
+      "index": 64,
+      "source_frame": 804,
+      "heldout": false,
+      "flow_valid_fraction": 0.7818957368827161,
+      "original_target_luma_mse": 0.0017179731512442231,
+      "local_target_luma_mse": 0.0010858926689252257,
+      "baseline_target_luma_mse": 0.0010549649596214294,
+      "local_mean_abs_rgb_delta_levels": 1.63921351544559
+    },
+    {
+      "index": 65,
+      "source_frame": 805,
+      "heldout": false,
+      "flow_valid_fraction": 0.7825400270061729,
+      "original_target_luma_mse": 0.00160650082398206,
+      "local_target_luma_mse": 0.0010234408546239138,
+      "baseline_target_luma_mse": 0.0009873420931398869,
+      "local_mean_abs_rgb_delta_levels": 1.5837847022339702
+    },
+    {
+      "index": 66,
+      "source_frame": 806,
+      "heldout": false,
+      "flow_valid_fraction": 0.781781925154321,
+      "original_target_luma_mse": 0.0017382351215928793,
+      "local_target_luma_mse": 0.0011206511408090591,
+      "baseline_target_luma_mse": 0.0010848091915249825,
+      "local_mean_abs_rgb_delta_levels": 1.6065334877930582
+    },
+    {
+      "index": 67,
+      "source_frame": 807,
+      "heldout": false,
+      "flow_valid_fraction": 0.7745900848765432,
+      "original_target_luma_mse": 0.0015696511836722493,
+      "local_target_luma_mse": 0.0009916595881804824,
+      "baseline_target_luma_mse": 0.0009522515465505421,
+      "local_mean_abs_rgb_delta_levels": 1.565451635979116
+    },
+    {
+      "index": 68,
+      "source_frame": 808,
+      "heldout": false,
+      "flow_valid_fraction": 0.7708622685185185,
+      "original_target_luma_mse": 0.0017666087951511145,
+      "local_target_luma_mse": 0.0011048552114516497,
+      "baseline_target_luma_mse": 0.001071566715836525,
+      "local_mean_abs_rgb_delta_levels": 1.5731366048566997
+    },
+    {
+      "index": 69,
+      "source_frame": 809,
+      "heldout": false,
+      "flow_valid_fraction": 0.7657532793209877,
+      "original_target_luma_mse": 0.001574446796439588,
+      "local_target_luma_mse": 0.0009780048858374357,
+      "baseline_target_luma_mse": 0.0009405483724549413,
+      "local_mean_abs_rgb_delta_levels": 1.5112359076738358
+    },
+    {
+      "index": 70,
+      "source_frame": 810,
+      "heldout": true,
+      "flow_valid_fraction": 0.7834461805555556,
+      "original_target_luma_mse": 0.0016739763086661696,
+      "local_target_luma_mse": 0.0010564158437773585,
+      "baseline_target_luma_mse": 0.0010174030903726816,
+      "local_mean_abs_rgb_delta_levels": 1.5189208765514195
+    },
+    {
+      "index": 71,
+      "source_frame": 811,
+      "heldout": false,
+      "flow_valid_fraction": 0.7998374807098766,
+      "original_target_luma_mse": 0.0015018903650343418,
+      "local_target_luma_mse": 0.0009209513082168996,
+      "baseline_target_luma_mse": 0.0008818986243568361,
+      "local_mean_abs_rgb_delta_levels": 1.496012737043202
+    },
+    {
+      "index": 72,
+      "source_frame": 812,
+      "heldout": false,
+      "flow_valid_fraction": 0.8300651041666667,
+      "original_target_luma_mse": 0.001665526069700718,
+      "local_target_luma_mse": 0.0010229264153167605,
+      "baseline_target_luma_mse": 0.000988872954621911,
+      "local_mean_abs_rgb_delta_levels": 1.523197665810585
+    },
+    {
+      "index": 73,
+      "source_frame": 813,
+      "heldout": false,
+      "flow_valid_fraction": 0.8371315586419753,
+      "original_target_luma_mse": 0.0014896731590852141,
+      "local_target_luma_mse": 0.0009152221609838307,
+      "baseline_target_luma_mse": 0.000874330522492528,
+      "local_mean_abs_rgb_delta_levels": 1.497500000987202
+    },
+    {
+      "index": 74,
+      "source_frame": 814,
+      "heldout": false,
+      "flow_valid_fraction": 0.8319483024691358,
+      "original_target_luma_mse": 0.001575022586621344,
+      "local_target_luma_mse": 0.0009806379675865173,
+      "baseline_target_luma_mse": 0.0009414403466507792,
+      "local_mean_abs_rgb_delta_levels": 1.52646109694615
+    },
+    {
+      "index": 75,
+      "source_frame": 815,
+      "heldout": false,
+      "flow_valid_fraction": 0.8269372106481482,
+      "original_target_luma_mse": 0.0014818643685430288,
+      "local_target_luma_mse": 0.0009048605570569634,
+      "baseline_target_luma_mse": 0.0008632813114672899,
+      "local_mean_abs_rgb_delta_levels": 1.5097729861736298
+    },
+    {
+      "index": 76,
+      "source_frame": 816,
+      "heldout": false,
+      "flow_valid_fraction": 0.8239766589506173,
+      "original_target_luma_mse": 0.0016345512121915817,
+      "local_target_luma_mse": 0.0009936187416315079,
+      "baseline_target_luma_mse": 0.0009574639261700213,
+      "local_mean_abs_rgb_delta_levels": 1.5399813652038574
+    },
+    {
+      "index": 77,
+      "source_frame": 817,
+      "heldout": false,
+      "flow_valid_fraction": 0.820162037037037,
+      "original_target_luma_mse": 0.0015676321927458048,
+      "local_target_luma_mse": 0.0009759655222296715,
+      "baseline_target_luma_mse": 0.0009359878022223711,
+      "local_mean_abs_rgb_delta_levels": 1.515110156033188
+    },
+    {
+      "index": 78,
+      "source_frame": 818,
+      "heldout": false,
+      "flow_valid_fraction": 0.8175670331790124,
+      "original_target_luma_mse": 0.0016653903294354677,
+      "local_target_luma_mse": 0.001032268744893372,
+      "baseline_target_luma_mse": 0.0009927700739353895,
+      "local_mean_abs_rgb_delta_levels": 1.5518678398802876
+    },
+    {
+      "index": 79,
+      "source_frame": 819,
+      "heldout": false,
+      "flow_valid_fraction": 0.812022087191358,
+      "original_target_luma_mse": 0.0016298999544233084,
+      "local_target_luma_mse": 0.0010052657453343272,
+      "baseline_target_luma_mse": 0.0009639427880756557,
+      "local_mean_abs_rgb_delta_levels": 1.5336706163361669
+    },
+    {
+      "index": 80,
+      "source_frame": 820,
+      "heldout": false,
+      "flow_valid_fraction": 0.8066753472222222,
+      "original_target_luma_mse": 0.0017280274769291282,
+      "local_target_luma_mse": 0.0010580697562545538,
+      "baseline_target_luma_mse": 0.001022801036015153,
+      "local_mean_abs_rgb_delta_levels": 1.5596732147969306
+    },
+    {
+      "index": 81,
+      "source_frame": 821,
+      "heldout": false,
+      "flow_valid_fraction": 0.7956486304012346,
+      "original_target_luma_mse": 0.001669413410127163,
+      "local_target_luma_mse": 0.0010456584859639406,
+      "baseline_target_luma_mse": 0.001004704157821834,
+      "local_mean_abs_rgb_delta_levels": 1.5399062004871666
+    },
+    {
+      "index": 82,
+      "source_frame": 822,
+      "heldout": false,
+      "flow_valid_fraction": 0.7916198881172839,
+      "original_target_luma_mse": 0.0017930117901414633,
+      "local_target_luma_mse": 0.0011400457005947828,
+      "baseline_target_luma_mse": 0.0011009116424247622,
+      "local_mean_abs_rgb_delta_levels": 1.5780107933096588
+    },
+    {
+      "index": 83,
+      "source_frame": 823,
+      "heldout": false,
+      "flow_valid_fraction": 0.7853317901234568,
+      "original_target_luma_mse": 0.001756698009558022,
+      "local_target_luma_mse": 0.0011096987873315811,
+      "baseline_target_luma_mse": 0.0010670055635273457,
+      "local_mean_abs_rgb_delta_levels": 1.5494565130211413
+    },
+    {
+      "index": 84,
+      "source_frame": 824,
+      "heldout": false,
+      "flow_valid_fraction": 0.7799657600308642,
+      "original_target_luma_mse": 0.0019226762233301997,
+      "local_target_luma_mse": 0.0011977084213867784,
+      "baseline_target_luma_mse": 0.0011644072365015745,
+      "local_mean_abs_rgb_delta_levels": 1.5900751459412277
+    },
+    {
+      "index": 85,
+      "source_frame": 825,
+      "heldout": false,
+      "flow_valid_fraction": 0.764970100308642,
+      "original_target_luma_mse": 0.001834284863434732,
+      "local_target_luma_mse": 0.001158383791334927,
+      "baseline_target_luma_mse": 0.001119988621212542,
+      "local_mean_abs_rgb_delta_levels": 1.574968819040805
+    },
+    {
+      "index": 86,
+      "source_frame": 826,
+      "heldout": false,
+      "flow_valid_fraction": 0.7493614969135802,
+      "original_target_luma_mse": 0.0020120928529649973,
+      "local_target_luma_mse": 0.0012796941446140409,
+      "baseline_target_luma_mse": 0.0012467483757063746,
+      "local_mean_abs_rgb_delta_levels": 1.6060821432620287
+    },
+    {
+      "index": 87,
+      "source_frame": 827,
+      "heldout": false,
+      "flow_valid_fraction": 0.7340668402777778,
+      "original_target_luma_mse": 0.0019220017129555345,
+      "local_target_luma_mse": 0.0012312803883105516,
+      "baseline_target_luma_mse": 0.0011928882449865341,
+      "local_mean_abs_rgb_delta_levels": 1.6008931654505432
+    },
+    {
+      "index": 88,
+      "source_frame": 828,
+      "heldout": false,
+      "flow_valid_fraction": 0.7202517361111112,
+      "original_target_luma_mse": 0.002166810678318143,
+      "local_target_luma_mse": 0.0013971399748697877,
+      "baseline_target_luma_mse": 0.0013659048127010465,
+      "local_mean_abs_rgb_delta_levels": 1.6413296456448734
+    },
+    {
+      "index": 89,
+      "source_frame": 829,
+      "heldout": false,
+      "flow_valid_fraction": 0.7053973765432099,
+      "original_target_luma_mse": 0.001939915120601654,
+      "local_target_luma_mse": 0.001239759847521782,
+      "baseline_target_luma_mse": 0.0012042047455906868,
+      "local_mean_abs_rgb_delta_levels": 1.6275014751590788
+    },
+    {
+      "index": 90,
+      "source_frame": 830,
+      "heldout": true,
+      "flow_valid_fraction": 0.6851340663580247,
+      "original_target_luma_mse": 0.002179147442802787,
+      "local_target_luma_mse": 0.0014193709939718246,
+      "baseline_target_luma_mse": 0.0013885837979614735,
+      "local_mean_abs_rgb_delta_levels": 1.6451447596773505
+    },
+    {
+      "index": 91,
+      "source_frame": 831,
+      "heldout": false,
+      "flow_valid_fraction": 0.7055864197530864,
+      "original_target_luma_mse": 0.002122517442330718,
+      "local_target_luma_mse": 0.0013992246240377426,
+      "baseline_target_luma_mse": 0.0013671189080923796,
+      "local_mean_abs_rgb_delta_levels": 1.6062932694330812
+    },
+    {
+      "index": 92,
+      "source_frame": 832,
+      "heldout": false,
+      "flow_valid_fraction": 0.7284765625,
+      "original_target_luma_mse": 0.0022021683398634195,
+      "local_target_luma_mse": 0.0014687073417007923,
+      "baseline_target_luma_mse": 0.0014371582074090838,
+      "local_mean_abs_rgb_delta_levels": 1.626475767698139
+    },
+    {
+      "index": 93,
+      "source_frame": 833,
+      "heldout": false,
+      "flow_valid_fraction": 0.7269516782407407,
+      "original_target_luma_mse": 0.0019311568466946483,
+      "local_target_luma_mse": 0.001264573889784515,
+      "baseline_target_luma_mse": 0.001228736131452024,
+      "local_mean_abs_rgb_delta_levels": 1.5929121687076986
+    },
+    {
+      "index": 94,
+      "source_frame": 834,
+      "heldout": false,
+      "flow_valid_fraction": 0.7209051890432099,
+      "original_target_luma_mse": 0.0021722991950809956,
+      "local_target_luma_mse": 0.0014143249718472362,
+      "baseline_target_luma_mse": 0.0013839822495356202,
+      "local_mean_abs_rgb_delta_levels": 1.619129218161106
+    },
+    {
+      "index": 95,
+      "source_frame": 835,
+      "heldout": false,
+      "flow_valid_fraction": 0.7178713348765432,
+      "original_target_luma_mse": 0.0020004543475806713,
+      "local_target_luma_mse": 0.0013116570189595222,
+      "baseline_target_luma_mse": 0.001274805166758597,
+      "local_mean_abs_rgb_delta_levels": 1.6049944516271353
+    },
+    {
+      "index": 96,
+      "source_frame": 836,
+      "heldout": false,
+      "flow_valid_fraction": 0.7306741898148148,
+      "original_target_luma_mse": 0.002075861906632781,
+      "local_target_luma_mse": 0.0013645085273310542,
+      "baseline_target_luma_mse": 0.0013285152381286025,
+      "local_mean_abs_rgb_delta_levels": 1.61147381644696
+    },
+    {
+      "index": 97,
+      "source_frame": 837,
+      "heldout": false,
+      "flow_valid_fraction": 0.7262254050925926,
+      "original_target_luma_mse": 0.0020094425417482853,
+      "local_target_luma_mse": 0.001317117246799171,
+      "baseline_target_luma_mse": 0.0012786064762622118,
+      "local_mean_abs_rgb_delta_levels": 1.5962614514864981
+    },
+    {
+      "index": 98,
+      "source_frame": 838,
+      "heldout": false,
+      "flow_valid_fraction": 0.7208357445987654,
+      "original_target_luma_mse": 0.00213337829336524,
+      "local_target_luma_mse": 0.0013833458069711924,
+      "baseline_target_luma_mse": 0.0013520827051252127,
+      "local_mean_abs_rgb_delta_levels": 1.6089061042293906
+    },
+    {
+      "index": 99,
+      "source_frame": 839,
+      "heldout": false,
+      "flow_valid_fraction": 0.7135460069444445,
+      "original_target_luma_mse": 0.0018202115315943956,
+      "local_target_luma_mse": 0.001175726531073451,
+      "baseline_target_luma_mse": 0.0011369544081389904,
+      "local_mean_abs_rgb_delta_levels": 1.5821588644757867
+    },
+    {
+      "index": 100,
+      "source_frame": 840,
+      "heldout": false,
+      "flow_valid_fraction": 0.7176673418209877,
+      "original_target_luma_mse": 0.0019605078268796206,
+      "local_target_luma_mse": 0.0012582980562001467,
+      "baseline_target_luma_mse": 0.0012242572847753763,
+      "local_mean_abs_rgb_delta_levels": 1.5493402630090714
+    },
+    {
+      "index": 101,
+      "source_frame": 841,
+      "heldout": false,
+      "flow_valid_fraction": 0.7236699459876543,
+      "original_target_luma_mse": 0.002053428441286087,
+      "local_target_luma_mse": 0.00134369358420372,
+      "baseline_target_luma_mse": 0.0013057236792519689,
+      "local_mean_abs_rgb_delta_levels": 1.5468107862398028
+    },
+    {
+      "index": 102,
+      "source_frame": 842,
+      "heldout": false,
+      "flow_valid_fraction": 0.7200607638888888,
+      "original_target_luma_mse": 0.002136268187314272,
+      "local_target_luma_mse": 0.0014366817194968462,
+      "baseline_target_luma_mse": 0.0013998515205457807,
+      "local_mean_abs_rgb_delta_levels": 1.5706463134847581
+    },
+    {
+      "index": 103,
+      "source_frame": 843,
+      "heldout": false,
+      "flow_valid_fraction": 0.6990306712962963,
+      "original_target_luma_mse": 0.0020070380996912718,
+      "local_target_luma_mse": 0.001286892918869853,
+      "baseline_target_luma_mse": 0.0012548902304843068,
+      "local_mean_abs_rgb_delta_levels": 1.5492361248470843
+    },
+    {
+      "index": 104,
+      "source_frame": 844,
+      "heldout": false,
+      "flow_valid_fraction": 0.6968730709876543,
+      "original_target_luma_mse": 0.0020124034490436316,
+      "local_target_luma_mse": 0.0013493148144334555,
+      "baseline_target_luma_mse": 0.0013133264146745205,
+      "local_mean_abs_rgb_delta_levels": 1.534871351905167
+    },
+    {
+      "index": 105,
+      "source_frame": 845,
+      "heldout": false,
+      "flow_valid_fraction": 0.7054465663580247,
+      "original_target_luma_mse": 0.0020154104568064213,
+      "local_target_luma_mse": 0.0013378309085965157,
+      "baseline_target_luma_mse": 0.0013068061089143157,
+      "local_mean_abs_rgb_delta_levels": 1.4819967141374946
+    },
+    {
+      "index": 106,
+      "source_frame": 846,
+      "heldout": false,
+      "flow_valid_fraction": 0.6993619791666666,
+      "original_target_luma_mse": 0.0019670745823532343,
+      "local_target_luma_mse": 0.001337582478299737,
+      "baseline_target_luma_mse": 0.0013043158687651157,
+      "local_mean_abs_rgb_delta_levels": 1.4879618003033102
+    },
+    {
+      "index": 107,
+      "source_frame": 847,
+      "heldout": false,
+      "flow_valid_fraction": 0.7160686728395061,
+      "original_target_luma_mse": 0.0018831308698281646,
+      "local_target_luma_mse": 0.0012257732450962067,
+      "baseline_target_luma_mse": 0.001199791906401515,
+      "local_mean_abs_rgb_delta_levels": 1.4534259284846485
+    },
+    {
+      "index": 108,
+      "source_frame": 848,
+      "heldout": false,
+      "flow_valid_fraction": 0.733461612654321,
+      "original_target_luma_mse": 0.0018667615950107574,
+      "local_target_luma_mse": 0.001257683034054935,
+      "baseline_target_luma_mse": 0.0012250602012500167,
+      "local_mean_abs_rgb_delta_levels": 1.4549320726655424
+    },
+    {
+      "index": 109,
+      "source_frame": 849,
+      "heldout": false,
+      "flow_valid_fraction": 0.7343137538580247,
+      "original_target_luma_mse": 0.002054010285064578,
+      "local_target_luma_mse": 0.001397090731188655,
+      "baseline_target_luma_mse": 0.001369514036923647,
+      "local_mean_abs_rgb_delta_levels": 1.4435400464572012
+    },
+    {
+      "index": 110,
+      "source_frame": 850,
+      "heldout": true,
+      "flow_valid_fraction": 0.7105314429012346,
+      "original_target_luma_mse": 0.0019958820194005966,
+      "local_target_luma_mse": 0.0013662050478160381,
+      "baseline_target_luma_mse": 0.0013363873586058617,
+      "local_mean_abs_rgb_delta_levels": 1.474970772396773
+    },
+    {
+      "index": 111,
+      "source_frame": 851,
+      "heldout": false,
+      "flow_valid_fraction": 0.7080232445987654,
+      "original_target_luma_mse": 0.0018723583780229092,
+      "local_target_luma_mse": 0.0012234831228852272,
+      "baseline_target_luma_mse": 0.001200393307954073,
+      "local_mean_abs_rgb_delta_levels": 1.4467531302943826
+    },
+    {
+      "index": 112,
+      "source_frame": 852,
+      "heldout": false,
+      "flow_valid_fraction": 0.7296985918209876,
+      "original_target_luma_mse": 0.001855222275480628,
+      "local_target_luma_mse": 0.001250392640940845,
+      "baseline_target_luma_mse": 0.0012220286298543215,
+      "local_mean_abs_rgb_delta_levels": 1.4717895118519664
+    },
+    {
+      "index": 113,
+      "source_frame": 853,
+      "heldout": false,
+      "flow_valid_fraction": 0.7151408179012345,
+      "original_target_luma_mse": 0.002017574617639184,
+      "local_target_luma_mse": 0.0013409708626568317,
+      "baseline_target_luma_mse": 0.0013179183006286621,
+      "local_mean_abs_rgb_delta_levels": 1.4626704761758447
+    },
+    {
+      "index": 114,
+      "source_frame": 854,
+      "heldout": false,
+      "flow_valid_fraction": 0.6843036265432099,
+      "original_target_luma_mse": 0.001946333679370582,
+      "local_target_luma_mse": 0.0013267496833577752,
+      "baseline_target_luma_mse": 0.0012973545817658305,
+      "local_mean_abs_rgb_delta_levels": 1.4947033510543406
+    },
+    {
+      "index": 115,
+      "source_frame": 855,
+      "heldout": false,
+      "flow_valid_fraction": 0.650841049382716,
+      "original_target_luma_mse": 0.0017615915276110172,
+      "local_target_luma_mse": 0.0011535757221281528,
+      "baseline_target_luma_mse": 0.0011258779559284449,
+      "local_mean_abs_rgb_delta_levels": 1.4690449903719127
+    },
+    {
+      "index": 116,
+      "source_frame": 856,
+      "heldout": false,
+      "flow_valid_fraction": 0.6617042824074074,
+      "original_target_luma_mse": 0.0017263401532545686,
+      "local_target_luma_mse": 0.001162311527878046,
+      "baseline_target_luma_mse": 0.001132445177063346,
+      "local_mean_abs_rgb_delta_levels": 1.482132556848228
+    },
+    {
+      "index": 117,
+      "source_frame": 857,
+      "heldout": false,
+      "flow_valid_fraction": 0.6896175733024691,
+      "original_target_luma_mse": 0.0017915607895702124,
+      "local_target_luma_mse": 0.0012060055742040277,
+      "baseline_target_luma_mse": 0.001179719576612115,
+      "local_mean_abs_rgb_delta_levels": 1.464308425784111
+    },
+    {
+      "index": 118,
+      "source_frame": 858,
+      "heldout": false,
+      "flow_valid_fraction": 0.6775072337962963,
+      "original_target_luma_mse": 0.001572648179717362,
+      "local_target_luma_mse": 0.001035252120345831,
+      "baseline_target_luma_mse": 0.0010033365106210113,
+      "local_mean_abs_rgb_delta_levels": 1.4822466694749892
+    },
+    {
+      "index": 119,
+      "source_frame": 859,
+      "heldout": false,
+      "flow_valid_fraction": 0.6555883487654321,
+      "original_target_luma_mse": 0.001718973508104682,
+      "local_target_luma_mse": 0.001158505561761558,
+      "baseline_target_luma_mse": 0.00112749298568815,
+      "local_mean_abs_rgb_delta_levels": 1.4508912269957364
+    }
+  ],
+  "heldout_target_mse": {
+    "original_target_luma_mse": 0.0014607957661307107,
+    "local_target_luma_mse": 0.0009682468953542411,
+    "baseline_target_luma_mse": 0.0009284318754604707
+  }
+}

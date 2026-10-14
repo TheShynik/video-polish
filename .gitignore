@@ -1,0 +1,19 @@
+# Explicit allow-list: binary assets, environments, model repositories and experiments stay outside Git.
+/*
+!/.gitignore
+!/.gitattributes
+!/AGENTS.md
+!/test_reference_detail.py
+!/test_visual_polish.py
+!/analyze_reference_detail_test.py
+!/reference_detail_results.md
+!/stable_local_native/
+/stable_local_native/assets/
+*.pyc
+__pycache__/
+*.mp4
+*.pth
+*.pt
+*.safetensors
+*.onnx
+*.gguf
