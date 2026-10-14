@@ -1,5 +1,11 @@
 # Video Polish — Local Native desktop prototype
 
+Portable build: `outputs/package-v1/VideoPolish-Windows-x64-v1.zip`. Extract the entire folder and open `VideoPolish.exe`; `_internal` must remain beside it. The package includes its own Python runtime and FFmpeg, and processing requires no network. Read `THIRD_PARTY.md` before redistribution: full corresponding source for all bundled FFmpeg dependencies has not been assembled, so redistribution licensing completeness is unresolved.
+
+Build on Windows x64 with Python3.12.14: create a NEW isolated environment, install `requirements_build_locked.txt`, then run `python video_polish_app/build_package.py`. The script refuses an existing package-v1 output directory. It reads existing FFmpeg binaries from `E:\ffmpeg\bin` and packages their unmodified files, stable settings, licenses, dependency versions and SHA256 manifest. No existing inference environment is modified. Artifacts/build logs remain outside Git; source and build pins are committed.
+
+Packaged EXE validation: launched independently from Windows TEMP, Tk initialized and the original video was processed using bundled FFmpeg into an eight-frame1920×1920/60FPS MP4 with audio; full-decode check passed, exit0,7.96seconds. Tested on this Windows11 machine; a separate clean machine has not been tested. The executable is unsigned.
+
 Double-click `Start Video Polish.cmd` in this directory. Uses existing isolated `.venv_phase7`; no installation, model downloads, global Python changes or GPU inference. Not yet a packaged standalone executable.
 
 1. Choose an SDR constant-FPS video.

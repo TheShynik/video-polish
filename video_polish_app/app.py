@@ -102,4 +102,15 @@ class App:
         self.root.destroy()
 
 if __name__=='__main__':
+    import sys
+    if '--self-test' in sys.argv:
+        import json
+        from engine import process_frame,probe,enhance
+        import numpy as np
+        target=Path(sys.argv[sys.argv.index('--self-test')+1]);target.mkdir(parents=True,exist_ok=True)
+        root=tk.Tk();root.withdraw();app=App(root);root.update();root.destroy()
+        probe(sys.argv[sys.argv.index('--source')+1])
+        result=enhance(sys.argv[sys.argv.index('--source')+1],target/'packaged_test.mp4',max_frames=8,start_frame=740)
+        (target/'self_test.json').write_text(json.dumps(result,indent=2))
+        sys.exit(0)
     root=tk.Tk();ttk.Style().theme_use('clam');App(root);root.mainloop()

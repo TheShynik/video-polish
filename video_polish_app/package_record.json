@@ -1,0 +1,13 @@
+{
+  "artifact": "D:\\_Work\\EnhanceTool\\video_polish_app\\outputs\\package-v1\\VideoPolish-Windows-x64-v1.zip",
+  "bytes": 146435111,
+  "sha256": "1c006aeae642ccb73efecfffc08d5b3ea24b6bfc1f30180329e8863accde2757",
+  "platform": "Windows x64",
+  "python": "3.12.14",
+  "packager": "PyInstaller 6.16.0",
+  "test": "Packaged EXE, independent launch from TEMP, Tk initialization and 8-frame original Unity video export; exit 0; 1920x1920; 60 FPS; AAC audio; full decode passed",
+  "test_seconds": 7.964330399991013,
+  "clean_machine_test": false,
+  "signed": false,
+  "redistribution_status": "Not cleared: corresponding source/build material for all static FFmpeg dependencies has not been assembled. Notices and source links included; do not treat these alone as full GPL compliance."
+}

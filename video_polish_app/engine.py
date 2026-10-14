@@ -7,9 +7,10 @@ import cv2
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from test_reference_detail import luma,apply
 from test_visual_polish import stable_residual
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(sys._MEIPASS) if getattr(sys,'frozen',False) else Path(__file__).resolve().parents[1]
 SETTINGS=json.loads((ROOT/'stable_local_native/settings.json').read_text())
-FF=r'E:\ffmpeg\bin\ffmpeg.exe'; FP=r'E:\ffmpeg\bin\ffprobe.exe'
+BIN=ROOT/'ffmpeg' if getattr(sys,'frozen',False) else Path(r'E:\ffmpeg\bin')
+FF=str(BIN/'ffmpeg.exe'); FP=str(BIN/'ffprobe.exe')
 FLAGS=subprocess.CREATE_NO_WINDOW
 
 def probe(path):
