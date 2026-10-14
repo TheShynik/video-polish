@@ -10,6 +10,7 @@
 !/stable_local_native/
 !/video_polish_app/
 /video_polish_app/outputs/
+/video_polish_app/*.log
 /stable_local_native/assets/
 *.pyc
 __pycache__/
